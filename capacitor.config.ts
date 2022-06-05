@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'mhcofre-frontend-ionic',
+  appId: 'br.com.marcoshssilva.mhcofre',
+  appName: 'MHCofre',
   webDir: 'www',
   bundledWebRuntime: false
 };
