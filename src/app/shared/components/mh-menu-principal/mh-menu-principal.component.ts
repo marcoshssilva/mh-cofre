@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { MhMessageHelperService } from 'src/app/core/services/mh-message-helper.service';
 
 @Component({
   selector: 'app-mh-menu-principal',
@@ -7,8 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MhMenuPrincipalComponent implements OnInit {
 
-  constructor() { }
+  contentID = 'main';
+  menuID = 'mh-menu-principal';
+  positionMenu = 'start';
+  typeMenu = 'overlay';
 
-  ngOnInit() {}
+  constructor(
+    private menuController: MenuController,
+    private messageHelper: MhMessageHelperService
+  ) { }
 
+  async ngOnInit() {}
+
+  public closeMenu() {
+    this.menuController.close(this.menuID);
+  }
+
+  public clickBtnSettings() {
+    this.closeMenu();
+    this.messageHelper.showDefaultMessageCannotUse();
+  }
+
+  public clickBtnLockApp() {
+    this.closeMenu();
+    this.messageHelper.showDefaultMessageCannotUse();
+  }
+
+  public clickBtnToggleDarkMode() {
+    this.closeMenu();
+    this.messageHelper.showDefaultMessageCannotUse();
+  }
 }
