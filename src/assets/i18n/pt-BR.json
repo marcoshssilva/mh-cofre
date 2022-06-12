@@ -1,5 +1,11 @@
 {
   "appFullName": "MHCofre Password-Manager",
   "appName": "MHCofre",
-  "appVersion": "1.0.0"
+  "appVersion": "1.0.0",
+  "messageHelper": {
+    "ok": "Confirmar",
+    "cancel": "Cancelar",
+    "functionDoesntWorktTitle": "RECURSO NÃO DISPONÍVEL AINDA",
+    "functionDoesntWorkDescription": "Este recurso encontra-se indisponível para uso."
+  }
 }
