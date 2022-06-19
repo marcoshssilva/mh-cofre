@@ -1,23 +1,26 @@
-<ion-menu [contentId]="contentID" [menuId]="menuID" [side]="positionMenu" [type]="typeMenu">
-  <ion-header></ion-header>
-  <ion-content></ion-content>
+<ion-split-pane [contentId]="contentID">
+  <ion-menu [contentId]="contentID" [menuId]="menuID" [side]="positionMenu" [type]="typeMenu">
+    <ion-header></ion-header>
+    <ion-content></ion-content>
 
-  <ion-footer>
-    <div style="display: flex;" class="ion-justify-content-around ion-margin-vertical">
+    <ion-footer>
+      <div style="display: flex;" class="ion-justify-content-around ion-margin-vertical">
 
-      <ion-button fill="clear" shape="round" (click)="clickBtnLockApp()">
-        <ion-icon size="large" slot="icon-only" name="lock-closed-outline"></ion-icon>
-      </ion-button>
+        <ion-button fill="clear" shape="round" (click)="clickBtnLockApp()">
+          <ion-icon slot="icon-only" name="lock-closed-outline"></ion-icon>
+        </ion-button>
 
-      <ion-button fill="clear" shape="round" (click)="clickBtnSettings()">
-        <ion-icon size="large" slot="icon-only" name="settings-outline"></ion-icon>
-      </ion-button>
+        <ion-button fill="clear" shape="round" (click)="clickBtnSettings()">
+          <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+        </ion-button>
 
-      <ion-button fill="clear" shape="round" (click)="clickBtnToggleDarkMode()">
-        <ion-icon size="large" slot="icon-only" name="moon-outline"></ion-icon>
-      </ion-button>
+        <ion-button fill="clear" shape="round" (click)="clickBtnToggleDarkMode()">
+          <ion-icon slot="icon-only" name="moon-outline"></ion-icon>
+        </ion-button>
 
-    </div>
-  </ion-footer>
-
-</ion-menu>
+      </div>
+    </ion-footer>
+  </ion-menu>
+  <!--rendered content -->
+  <ng-content></ng-content>
+</ion-split-pane>

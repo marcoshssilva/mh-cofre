@@ -9,6 +9,7 @@ import { MhMessageHelperService } from 'src/app/core/services/mh-message-helper.
 })
 export class MhMenuPrincipalComponent implements OnInit {
 
+  content: Component;
   contentID = 'main';
   menuID = 'mh-menu-principal';
   positionMenu = 'start';
