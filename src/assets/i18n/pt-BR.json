@@ -7,5 +7,26 @@
     "cancel": "Cancelar",
     "functionDoesntWorktTitle": "RECURSO NÃO DISPONÍVEL AINDA",
     "functionDoesntWorkDescription": "Este recurso encontra-se indisponível para uso."
+  },
+  "menuPrincipal": {
+    "itemsMenu": {
+      "home": "Principal",
+      "title": "Meu Cofre",
+      "allEntries": "Todas as entradas",
+      "emails": "Emails",
+      "socialMedia": "Redes Sociais",
+      "websites": "Sites da internet",
+      "applications": "Aplicativos",
+      "bankCards": "Cartões de Banco",
+      "adresses": "Endereços",
+      "notes": "Notas",
+      "titleUtilities": "Ferramentas",
+      "passwordCheck" : "Verificador de senhas",
+      "passwordGenerator": "Gerador de senhas"
+    }
+  },
+  "user": {
+    "defaultUserNotLogged": "Usuário",
+    "defaultEmailNotLogged": "Nada por aqui."
   }
 }
