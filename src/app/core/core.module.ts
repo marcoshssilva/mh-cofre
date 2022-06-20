@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -25,6 +26,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   exports: [
     FormsModule,
     ReactiveFormsModule,
+    RouterModule,
     HttpClientModule,
     TranslateModule
   ]

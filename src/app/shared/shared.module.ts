@@ -5,10 +5,14 @@ import { MhToolbarPrincipalComponent } from './components/mh-toolbar-principal/m
 import { CoreModule } from '../core/core.module';
 import { MhMenuPrincipalComponent } from './components/mh-menu-principal/mh-menu-principal.component';
 
+import { MhAvatarUserPrincipalComponent } from './components/mh-avatar-user-principal/mh-avatar-user-principal.component';
+
+
 @NgModule({
   declarations: [
     MhToolbarPrincipalComponent,
-    MhMenuPrincipalComponent
+    MhMenuPrincipalComponent,
+    MhAvatarUserPrincipalComponent
   ],
   imports: [
     CommonModule,
@@ -16,10 +20,11 @@ import { MhMenuPrincipalComponent } from './components/mh-menu-principal/mh-menu
     CoreModule
   ],
   exports: [
-    CoreModule,
     IonicModule,
+    CoreModule,
     MhToolbarPrincipalComponent,
-    MhMenuPrincipalComponent
+    MhMenuPrincipalComponent,
+    MhAvatarUserPrincipalComponent
   ],
 })
 export class SharedModule {}
