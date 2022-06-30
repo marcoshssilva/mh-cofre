@@ -1,22 +1,39 @@
-<ion-toolbar id="main">
-  <!-- botoes esquerda -->
-  <ion-buttons slot="start">
-    <!-- botao Abrir Menu Principal -->
-    <ion-menu-button menu="mh-menu-principal"></ion-menu-button>
-  </ion-buttons>
+<ion-header translucent>
+  <ion-toolbar>
+    <!-- buttons top left -->
+    <ion-buttons slot="start">
+      <!-- button openmenu -->
+      <ion-menu-button menu="mh-menu-principal"></ion-menu-button>
+    </ion-buttons>
 
-  <!-- botoes direita -->
-  <ion-buttons slot="end">
-    <!-- botao Pesquisar -->
-    <ion-button>
-      <ion-icon slot="icon-only" name="search"></ion-icon>
-    </ion-button>
-  </ion-buttons>
+    <!-- buttons top right -->
+    <ion-buttons slot="end">
+      <!-- button search -->
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 
-  <ion-title size="large" class="ion-text-center">
-    {{ title }}
-  </ion-title>
+    <!-- title toolbar -->
+    <ion-title size="large">
+      {{ title }}
+    </ion-title>
 
-</ion-toolbar>
+  </ion-toolbar>
+</ion-header>
 
+<ion-content fullscreen>
+  <ion-header collapse="condense">
+    <!-- visible on iOS mode -->
+    <ion-toolbar>
+      <!-- title size toolbar -->
+      <ion-title size="large">
+        {{ title }}
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
 
+  <!-- content -->
+  <ng-content></ng-content>
+  <!-- end content -->
+</ion-content>

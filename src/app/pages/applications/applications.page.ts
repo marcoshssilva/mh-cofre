@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { MhTranslateHelperService } from 'src/app/core/services/mh-translate-helper.service';
 
 @Component({
   selector: 'app-applications',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./applications.page.scss'],
 })
 export class ApplicationsPage implements OnInit {
-
-  constructor() { }
+  constructor(
+    private translate: TranslateService,
+    private translateHelperService: MhTranslateHelperService
+  ) {}
 
   ngOnInit() {
+    // setup translator
+    this.translateHelperService.setupTranslateService(this.translate);
   }
-
 }
