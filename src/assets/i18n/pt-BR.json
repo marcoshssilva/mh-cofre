@@ -21,12 +21,25 @@
       "adresses": "Endereços",
       "notes": "Notas",
       "titleUtilities": "Ferramentas",
-      "passwordCheck" : "Verificador de senhas",
+      "passwordCheck": "Verificador de senhas",
       "passwordGenerator": "Gerador de senhas"
     }
   },
   "user": {
     "defaultUserNotLogged": "Usuário",
     "defaultEmailNotLogged": "Nada por aqui."
+  },
+  "pages": {
+    "home": { "title": "Principal" },
+    "allEntries": { "title": "Todas as entradas" },
+    "emails": { "title": "Emails" },
+    "socialMedia": { "title": "Redes Sociais" },
+    "websites": { "title": "Internet" },
+    "applications": { "title": "Aplicativos" },
+    "bankCards": { "title": "Cartões de Banco" },
+    "adresses": { "title": "Endereços" },
+    "notes": { "title": "Notas" },
+    "passwordCheck": { "title": "Verificador de senhas" },
+    "passwordGenerator": { "title": "Gerador de senhas" }
   }
 }
